@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Amor, ¡Feliz Mes!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>¡Feliz Primer Mes, Mi Amor!</h1>
+        <p>Te dedico este pequeño espacio para recordarte lo especial que eres para mí y que cada instante a tu lado es
+            un regalo.</p>
+        <p> Gracias por esos momentos inolvidables.</p>
+    </header>
+
+    <section class="main-section">
+        <h2>MI NIÑA <br> HERMOSA</h2>
+        <div class="contain">
+            <div class="text1">
+                <p>Nuestra historia comenzo desde el primer momento en que entrelazamos miradas.</p>
+                <p>Nos habíamos cruzado muchas veces antes, compartiendo amistades cercanas, fue como si
+                    destino nos estuviera acercando poco a poco.</p>
+                <p>Sin embargo, fue aquella noche en la que decidí ir a hablarte cuando todo cambió.</p>
+                <p>Aquel momento, aunque sencillo, marcó el comienzo de nuestra historia, y desde entonces no puedo
+                    imaginar una vida sin ti. </p>
+            </div>
+            <div class="image-container">
+                <img src="/img/1.jpg" class="image-principal">
+            </div>
+            <div class="text2">
+                <p>Tu presencia ilumina mis días de una manera única, logrando que todo a mi alrededor sea mejor y más
+                    brillante.</p>
+                <p> No eres solo mi pareja, eres mucho más: mi amiga incondicional, mi apoyo incondicional,
+                    la persona que entiende mis emociones como nadie más.</p>
+                <p>Junto a ti he descubierto un amor puro y muy sincero el cual me ha hecho sentir amado tal como soy, y
+                    eso me
+                    da fuerzas para mejorar cada día y ser un mejor hombre para tí.</p>
+            </div>
+        </div>
+        <div class="text3">
+            <p>¡Feliz mes, mi vida! Gracias por cada risa, cada abrazo, cada beso y cada momento compartido.<br>♡♡♡</p>
+        </div>
+        <button onclick="revealSurprise()">Ver Mensaje Especial</button>
+        <p id="surprise-message"></p>
+    </section>
+
+    </section>
+
+    <section class="gallery-section">
+        <h2>Momentos Juntos</h2>
+        <div class="gallery">
+            <div class="gallery-item-container">
+                <img src="/img/M1.jpg" alt="Foto juntos" class="gallery-item"
+                    onclick="showStory('Primer beso',' Este fue el día en que, tras vernos por primera vez, volvimos a encontrarnos una mañana durante una de las fiestas del pueblo. Esa mañana la pasamos bailando, compartiendo momentos llenos de alegría. Aunque más tarde seguimos caminos separados, ambos asistimos al desfile, tú bailando y yo tocando. Al terminar el desfile, fui a buscarte, y pasamos un rato juntos que siempre quedará grabado en mi memoria. Pero fue al dejarte en casa cuando sucedió lo más especial: nuestro primer beso, ese instante mágico que marcó el comienzo de esta hermosa historia que hemos construido juntos.')">
+                <div class="story-text" id="story-1">Primer beso</div>
+            </div>
+            <div class="gallery-item-container">
+                <video class="gallery-item" autoplay loop muted
+                    onclick="showStory('Concierto', 'Este día fue uno de esos momentos mágicos que siempre quedarán grabados en mi corazón. Nos encontramos en el concierto y desde entonces no nos separamos, disfrutamos juntos cada instante, bailando bajo la lluvia, besándonos sin importar nada más. Fue tan especial estar a tu lado, empapados pero felices, refugiándonos para cantar juntos las canciones de Jhonny Rivera. Al día siguiente, como si el destino nos volviera a juntar, compartimos otro concierto, pero esta vez, en la madrugada, mientras todo ya terminaba, estábamos tú y yo, sentados, apoyándonos uno en el otro, compartiendo una conexión que solo nosotros entendemos.', true)">
+                    <source src="/img/vid1.mp4" type="video/mp4">
+                </video>
+                <div class="story-text" id="story-2">Concierto</div>
+            </div>
+            <div class="gallery-item-container">
+                <img src="/img/M2.jpg" alt="Paseo por el parque" class="gallery-item"
+                    onclick="showStory('Partido', 'Ese día en que te invité a mi casa para ver la final de Colombia con mi familia y amigos fue verdaderamente especial. A pesar de la emoción del partido, había momentos en los que me perdía en la belleza que irradiabas, y me encontraba observándote embelesado. Notaba cómo te sonrojabas cada vez que nuestras miradas se encontraban, lo cual hacía el momento aún más encantador. Aunque el partido no terminó como esperábamos, decidimos salir a disfrutar del desfile, dejándonos llevar por el ambiente festivo. Al final de la noche, nos fuimos un poco aturdidos, pero con el recuerdo de esos momentos compartidos y la sonrisa en el rostro.')">
+                <div class="story-text" id="story-3">Partido</div>
+            </div>
+            <div class="gallery-item-container">
+                <video class="gallery-item" autoplay loop muted
+                    onclick="showStory('Noche de Pelis', 'Aquí vivimos dos noches de películas que se han convertido en recuerdos inolvidables para mí. En una de esas noches, nos dedicamos a tomarnos fotos, compartir momentos y muchos besos, para luego disfrutar de una película del Studio Ghibli. La combinación de risas y caricias hizo que esa noche fuera mágica. En la otra noche, aunque yo estaba algo enfermo, tu compañía hizo que todo fuera mejor. Nos acurrucamos en mi cama, en mi cuarto, viendo películas del Studio Ghibli mientras tú me acariciabas el cabello con ternura. La forma en que te preocupabas por mí y el calor de tu presencia hicieron que, a pesar de mi malestar, la noche fuera increíblemente reconfortante y especial. Esos momentos de cercanía y cariño no solo hicieron que las noches fueran hermosas, sino que también las convirtieron en recuerdos que atesoro profundamente.', true)">
+                    <source src="/img/vid2.mp4" type="video/mp4">
+                </video>
+                <div class="story-text" id="story-2">Noche de Pelis</div>
+            </div>
+            <div class="gallery-item-container">
+                <img src="/img/M3.jpg" alt="Paseo por el parque" class="gallery-item"
+                    onclick="showStory('Despedida', 'En el último día antes de que te fueras del pueblo, me desperté con una mezcla de emociones, sabiendo que era el momento de decir adiós, al menos temporalmente. Desde por la mañana, estuve contigo, valorando cada minuto que nos quedaba juntos. Te acompañé mientras hacías tus cosas y nos tomamos fotos para inmortalizar esos momentos especiales. A medida que el día avanzaba, cada instante compartido se volvía más precioso. Nos reímos, hablamos y disfrutamos de nuestra compañía al máximo. Ahora, me encuentro esperando con ansias el día en que regreses. La idea de volver a estar contigo, abrazarte, besarte y simplemente sentir tu presencia me da fuerzas para superar los días que pasan sin ti. Te extraño más de lo que puedo expresar con palabras, y cada día que pasa me recuerda cuánto valoro esos momentos juntos y cuánto deseo que vuelvas para que podamos seguir creando recuerdos inolvidables.')">
+                <div class="story-text" id="story-5">Despedida</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mostrar la imagen y la historia -->
+    <div id="storyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalTitle" class="modal-title"></div> <!-- título -->
+            <div id="modalImage" class="modal-image"></div> <!-- imagen o video -->
+            <div id="modalStory" class="modal-story"></div> <!-- historia -->
+        </div>
+    </div>
+
+    <section class="carousel-section">
+        <h2>FOTITOS QUE AMO DE MI NIÑA CHUIQUITA <br> ♡♡♡</h2>
+        <div class="carousel-container">
+            <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <div class="carousel-slide">
+                <img src="/img/C2.jpg" alt="Imagen 1" class="carousel-image">
+                <img src="/img/C1.jpg" alt="Imagen 2" class="carousel-image">
+                <img src="/img/C3.jpg" alt="Imagen 3" class="carousel-image">
+                <img src="/img/C4.jpg" alt="Imagen 4" class="carousel-image">
+                <img src="/img/C5.jpg" alt="Imagen 5" class="carousel-image">
+                <img src="/img/C6.jpg" alt="Imagen 6" class="carousel-image">
+                <img src="/img/C7.jpg" alt="Imagen 7" class="carousel-image">
+                <img src="/img/C9.jpg" alt="Imagen 8" class="carousel-image">
+                <img src="/img/C8.jpg" alt="Imagen 9" class="carousel-image">
+            </div>
+            <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <h2>Frase de Amor</h2>
+        <blockquote id="love-quote">"Te amo no solo por lo que eres, sino por lo que soy cuando estoy contigo." "Roy
+            Croft"</blockquote>
+        <button onclick="changeQuote()">Otra Frase</button>
+    </section>
+
+    <footer>
+        <p class="text-footer"> 11/08/2024 <br> ¡Mi Amor! <br> Con todo mi amor para ti <span
+                class="heart">&hearts;</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
